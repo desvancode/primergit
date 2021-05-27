@@ -1,0 +1,96 @@
+*{
+    margin:0;
+    border:0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    float:left;
+    text-decoration:none;
+    text-align:center;
+    background-color:black;
+    font-size: large; 
+    font-weight: bold;
+    color:white;
+    width:170px;
+    height: 30px;
+    padding-top:13px;
+}
+a:hover{
+    background-color: #999;
+    color:red;
+}
+.relleno{
+    height: 30px;
+    width: auto;
+    padding-top: 13px;
+    background-color: black;
+}
+.fotogrande{
+    position:relative;
+}
+img.panadero{
+    width: 90%;
+    margin:40px 10px 30px 35px;
+}
+.leyenda{
+    position: absolute;
+    bottom:50px;
+    left: 40px;
+    color:white;
+    font-size:1.5em;
+}
+.byn::first-line{
+    font-weight: bold;
+    color:white;
+    background-color: black;
+}
+.columna1{
+    margin-left: 35px;
+}
+.linea{
+    float:left;
+    padding-right:5px
+}
+h2{
+    height: 1.5em;
+    border-bottom: 2px solid grey;
+}
+h3.destacados{
+    height:80px;
+    border-bottom:1px solid grey;
+    padding: 10px;
+}
+.columna1, .columna2, .columna3{
+    float: left;
+}
+.columna1{
+    width:38%;
+    margin-right: 30px;
+}
+.columna2, .columna3{
+    width:24%;
+    margin: 40px 30px
+}
+@media (max-width:860px) and (min-width:480px){
+    a{
+        width: 93px;
+        font-size:medium;
+    }
+}
+@media (max-width:479px){
+    a{
+        width:85px;
+        font-size: medium;
+    }
+    .columna1, .columna2, .columna3, .linea{
+        float:none;
+        margin:0;
+        width: 100%;
+    }
+    img.panadero{
+        margin:0;
+    }
+}
